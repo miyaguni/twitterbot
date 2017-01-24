@@ -7,5 +7,5 @@ client = Twitter::REST::Client.new(
   access_token_secret: "foAlUfbSd3i83FPH9kAkg6OOEz05eign4EhwTNynLplsc",
 )
 
-a = File.read('./tweet.txt').split("\n")
-client.update(a.sample)
+tw = File.read('./tweet.txt').split("\n")
+client.update(tw.sample)
